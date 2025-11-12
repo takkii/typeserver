@@ -1,0 +1,20 @@
+{
+  "name": "types",
+  "version": "1.0.0",
+  "description": "RESTful Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RESTful",
+    "api",
+    "backend"
+  ],
+  "author": "Takayuki Kamiyama",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^24.29.1"
+  }
+}
