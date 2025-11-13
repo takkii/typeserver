@@ -135,3 +135,19 @@ GET /groups from ::1
 ```
 
 > ctrl + c / Stop
+
+```zsh
+cd GitHub
+
+git clone git@github.com:takkii/json.git
+
+git clone git@github.com:takkii/types.git
+
+cd ..
+
+cd ~/GitHub/types && mkdir json && cd
+
+copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
+```
+
+> 更新履歴: 2025/11/13 🔄
