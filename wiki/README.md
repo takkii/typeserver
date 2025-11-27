@@ -152,4 +152,11 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
+```json
+# ./json/types.json
+{
+  "password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"
+}
+```
+
 > 更新履歴: 2025/11/27 🔄
