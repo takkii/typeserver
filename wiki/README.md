@@ -1,4 +1,4 @@
-### RESTful JSON API Server
+### RESTful JSON Server
 
 ```markdown
 cd types
@@ -160,3 +160,5 @@ copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
 > 更新履歴: 2025/11/27 🔄
+>
+> 文献: 「サーバサイドJavaScript Node.js入門」を参考にしました。
