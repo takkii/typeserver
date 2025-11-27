@@ -1,11 +1,14 @@
 ### RESTful JSON Server
 
-```markdown
-# ./json/types.json
+```json
 {
   "password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"
 }
+```
 
+> ./json/types.jsonに設置します。
+
+```markdown
 cd types
 
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
@@ -171,3 +174,5 @@ copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 > 更新履歴: 2025/11/27 🔄
 >
 > 文献: 「サーバサイドJavaScript Node.js入門」を参考にしました。
+> 
+> GitHub takkii/jsonプロジェクトは現在、非公開にしています。使用例として参考にしてください。
