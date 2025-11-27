@@ -109,6 +109,8 @@ DELETE /groups undefined from ::1
 ```zsh
 # ./json/groups.jsonがあるとき、コマンドプロンプトで実行
 curl -X POST -H "Content-Type: application/json" -d @groups.json localhost:1337/groups
+# overdrive/json
+curl -X POST -H "Content-Type: application/json" -d @data.json localhost:1337/datas
 ```
 
 ```zsh
@@ -150,4 +152,4 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
-> 更新履歴: 2025/11/13 🔄
+> 更新履歴: 2025/11/27 🔄
