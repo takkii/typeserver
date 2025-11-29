@@ -6,7 +6,6 @@ const json_data = './json/types.json'
 if (existsSync(`${json_data}`)) {
     const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
     if (data["password"] == process.argv[3]) {
-
         var mask = process.argv[2];
         var port = process.env.PORT || mask;
         var obj = {};
@@ -83,6 +82,16 @@ if (existsSync(`${json_data}`)) {
                     res.end();
                     break;
             }
+            req.setTimeout(5000);
+
+            req.on('timeout', function () {
+                console.log('request timed out');
+                req.abort()
+            });
+
+            req.on('error', function (err) {
+                console.log('Error: ' + err.code + ', ' + err.message);
+            });
         });
 
         server.on('error', function (e) {
