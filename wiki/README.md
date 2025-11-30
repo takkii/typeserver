@@ -1,24 +1,23 @@
 ### RESTful JSON Server
 
 ```json
+// ./types/json/types.json
 {
   "password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"
 }
 ```
 
-> ./json/types.jsonに設置します。
-
 ```markdown
+# 基本、PowerShellで実行
 cd types
 
+# server.jsを実行
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
-
-# listening on 1337
-
-npm install -g forever
+listening on 1337
 
 # forever to run scripts continuously for Server.
-Assuming a VPS server.
+# Assuming a VPS server.
+npm install -g forever
 
 # Start.
 forever start .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
@@ -126,9 +125,11 @@ DELETE /groups undefined from ::1
 ```
 
 ```zsh
-# ./json/groups.jsonがあるとき、コマンドプロンプトで実行
+# コマンドプロンプトで実行
+
+# ./json
 curl -X POST -H "Content-Type: application/json" -d @groups.json localhost:1337/groups
-# overdrive/json
+# ./overdrive/json
 curl -X POST -H "Content-Type: application/json" -d @data.json localhost:1337/datas
 ```
 
@@ -171,8 +172,13 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
-> 更新履歴: 2025/11/27 🔄
+> _履歴: 2025/11/30 🔄_
 >
-> 文献: 「サーバサイドJavaScript Node.js入門」を参考にしました。
-> 
-> GitHub takkii/jsonプロジェクトは現在、非公開にしています。使用例として参考にしてください。
+> 「説明文の詳細」
+>
+> - GitHub takkii/jsonとmetaphorプロジェクトは非公開にしています。
+>
+> - typesプロジェクトの使用例として参考にしてください。
+>
+
+#### 参考文献: 「サーバサイドJavaScript Node.js入門」 
