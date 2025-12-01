@@ -1,10 +1,10 @@
 {
-  "name": "typeserver",
-  "version": "1.0.1",
+  "name": "types-server",
+  "version": "1.0.0",
   "description": "RESTful Server",
   "main": "server.js",
   "bin": {
-    "types": "bin/typeserver"
+    "types": "bin/types"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
