@@ -1,11 +1,13 @@
 ### RESTful Server
 
 ```markdown
-# PowerShellで実行
+# コマンドプロンプトで実行
 cd typeserver
 
-# コマンドプロンプトで実行
 mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
+
+# PowerShellを起動
+cd typeserver
 
 # テスト
 npm link
@@ -13,7 +15,7 @@ npm link
 # テスト完了
 npm unlink types
 
-# ① VPSサーバー用
+# ① サーバー用
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
