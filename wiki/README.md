@@ -1,6 +1,8 @@
 ### RESTful Server
 
 ```markdown
+# コメントは、日本語で書きます。
+
 # コマンドプロンプトで実行
 cd typeserver
 
@@ -25,14 +27,13 @@ types 1337
 
 ※ ①と②を環境別で実行しサーバーを起動する。
 
-# forever to run scripts continuously for Server.
-# Assuming a VPS server.
+# foreverは、スクリプトを永続的に実行します。
 npm install -g forever
 
-# Start, forever command in VPS server.
+# 開始, foreverをVPSサーバーで実行を想定します。
 forever start .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 
-# Stop, forever command in VPS server.
+# 停止, foreverをVPSサーバーで実行を想定します。
 forever stop .\server.js
 ```
 
