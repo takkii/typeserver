@@ -5,21 +5,23 @@ const json_data = './json/types.json'
 
 if (existsSync(`${json_data}`)) {
     const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
-    if (data["password"] == process.argv[3]) {
-        var mask = process.argv[2];
-        var port = process.env.PORT || mask;
-        var obj = {};
-        var server = http.createServer(function (req, res) {
-            var remoteAddress = req.connection.remoteAddress;
-            var header = {'Connection': 'close', 'Content-Length': 0};
-            var key = req.url;
+    if (data["password"] === process.argv[3]) {
+        const mask = process.argv[2];
+        const port = process.env.PORT || mask;
+        let obj = {};
+        const server = http.createServer(function (req, res) {
+            let data;
+            // noinspection JSDeprecatedSymbols
+            const remoteAddress = req.connection.remoteAddress;
+            const header = {'Connection': 'close', 'Content-Length': 0};
+            const key = req.url;
             switch (req.method) {
                 case 'POST':
                     if (obj[key]) {
                         res.writeHead(403, header);
                         res.end();
                     } else {
-                        var data = '';
+                        data = '';
                         req.on('data', function (chunk) {
                             data += chunk;
                         })
@@ -37,7 +39,7 @@ if (existsSync(`${json_data}`)) {
                     break;
                 case 'GET':
                     if (obj[key]) {
-                        var json = JSON.stringify(obj[key]);
+                        const json = JSON.stringify(obj[key]);
                         res.writeHead(200, {
                             'Content-Length': Buffer.byteLength(json),
                             'Content-Type': 'application/json',
@@ -52,7 +54,7 @@ if (existsSync(`${json_data}`)) {
                     break;
                 case 'PUT':
                     if (obj[key]) {
-                        var data = ''
+                        data = '';
                         req.on('data', function (chunk) {
                             data += chunk;
                         });
