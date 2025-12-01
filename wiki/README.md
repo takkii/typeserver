@@ -11,9 +11,20 @@
 # 基本、PowerShellで実行
 cd types
 
-# server.jsを実行
+# typesプロジェクトをライブラリに追加
+npm link
+
+# ① typesを実行
+types 1337 becbda45-341b-4141-b63f-dad7bf1dc653
+
+# テスト完了後
+npm unlink
+
+# ② server.jsを実行
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
+
+※ ①と②どちらかを実行する。どちらでもよい。
 
 # forever to run scripts continuously for Server.
 # Assuming a VPS server.
