@@ -1,7 +1,7 @@
 ### RESTful JSON Server
 
 ```json
-// ./typeserver/json/typeserver.json
+// ./typeserver/json/types.json
 {
   "password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"
 }
@@ -180,7 +180,7 @@ cd ..
 
 cd ~/GitHub/typeserver && mkdir json && cd
 
-copy ~/GitHub/json/typeserver/typeserver.json ~/GitHub/typeserver/json/typeserver.json
+copy ~/GitHub/json/typeserver/types.json ~/GitHub/typeserver/json/types.json
 ```
 
 > _履歴: 2025/11/30 🔄_
