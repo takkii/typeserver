@@ -1,6 +1,6 @@
 {
-  "name": "types",
-  "version": "1.0.2",
+  "name": "types-server",
+  "version": "1.0.0",
   "description": "RESTful Server",
   "main": "server.js",
   "bin": {

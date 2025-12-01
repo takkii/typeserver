@@ -2,6 +2,6 @@
 
 [![NPM](https://nodei.co/npm/types-server.png)](https://nodei.co/npm/types-server/)
 
-### Types is RESTful Server.
+### Typeserver is RESTful Server.
 
 > 更新履歴: 2025/12/01 🔄
