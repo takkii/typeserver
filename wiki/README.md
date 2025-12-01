@@ -8,8 +8,8 @@
 ```
 
 ```markdown
-# 基本、PowerShellで実行
-cd types
+# PowerShellで実行
+cd typeserver
 
 # typesプロジェクトをライブラリに追加
 npm link
@@ -17,15 +17,15 @@ npm link
 # テスト完了後
 npm unlink types
 
-# ① typesを実行
-npm install -g types-server
-types 1337
-
-# ② server.jsを実行
+# ① typeserver/server.jsを実行
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
-※ ①と②どちらかを実行する。どちらでもよい。
+# ② Powershellを起動後、typesを実行
+npm install -g types-server
+types 1337
+
+※ ①と②どちらかを実行しサーバーを起動する。
 
 # forever to run scripts continuously for Server.
 # Assuming a VPS server.
