@@ -180,7 +180,7 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
-> _履歴: 2025/11/30 🔄_
+> _履歴: 2025/12/01 🔄_
 >
 > 「説明文の詳細」
 >
