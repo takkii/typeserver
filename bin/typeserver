@@ -3,7 +3,7 @@
 import http from 'http';
 import {existsSync, readFileSync} from 'node:fs';
 
-const json_data = './json/typeserver.json'
+const json_data = './json/types.json'
 
 if (existsSync(`${json_data}`)) {
     const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
