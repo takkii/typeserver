@@ -1,7 +1,7 @@
 ### RESTful JSON Server
 
 ```json
-// ./typeserver/json/types.json
+// ./types/json/types.json
 {
   "password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"
 }
@@ -9,16 +9,17 @@
 
 ```markdown
 # 基本、PowerShellで実行
-cd typeserver
+cd types
 
 # typesプロジェクトをライブラリに追加
 npm link
 
-# ① typesを実行
-typeserver 1337 becbda45-341b-4141-b63f-dad7bf1dc653
-
 # テスト完了後
-npm unlink
+npm unlink types
+
+# ① typesを実行
+npm install -g types-server
+types 1337
 
 # ② server.jsを実行
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
@@ -174,13 +175,13 @@ cd GitHub
 
 git clone git@github.com:takkii/json.git
 
-git clone git@github.com:takkii/typeserver.git
+git clone git@github.com:takkii/types.git
 
 cd ..
 
-cd ~/GitHub/typeserver && mkdir json && cd
+cd ~/GitHub/types && mkdir json && cd
 
-copy ~/GitHub/json/typeserver/types.json ~/GitHub/typeserver/json/types.json
+copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
 > _履歴: 2025/11/30 🔄_
