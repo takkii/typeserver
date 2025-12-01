@@ -4,4 +4,6 @@
 
 ### Typeserver is RESTful Server.
 
-> 更新履歴: 2025/12/01 🔄
+Wiki is [here](https://github.com/takkii/typeserver/tree/main/wiki).
+
+> ChangeLogs: 2025/12/01 🔄
