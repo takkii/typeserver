@@ -16,5 +16,9 @@
   ],
   "author": "Takayuki Kamiyama",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takkii/typeserver.git"
+  }
 }
