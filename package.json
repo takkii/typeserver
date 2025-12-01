@@ -1,8 +1,11 @@
 {
   "name": "types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RESTful Server",
   "main": "server.js",
+  "bin": {
+    "types": "bin/types"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +16,5 @@
   ],
   "author": "Takayuki Kamiyama",
   "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "puppeteer": "^24.29.1"
-  }
+  "type": "module"
 }
