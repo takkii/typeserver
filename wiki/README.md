@@ -1,7 +1,7 @@
 ### RESTful Server
 
 ```markdown
-# コメントは、日本語で書きます。
+# コメントは、日本語で書きます
 
 # コマンドプロンプトで実行
 cd typeserver
@@ -27,13 +27,13 @@ types 1337
 
 ※ ①と②を環境別で実行しサーバーを起動する。
 
-# foreverは、スクリプトを永続的に実行します。
+# foreverは、スクリプトを永続的に実行します
 npm install -g forever
 
-# 開始, foreverをVPSサーバーで実行を想定します。
+# 開始, foreverをVPSサーバーで実行を想定します
 forever start .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 
-# 停止, foreverをVPSサーバーで実行を想定します。
+# 停止, foreverをVPSサーバーで実行を想定します
 forever stop .\server.js
 ```
 
@@ -103,7 +103,7 @@ Date: Sun, 09 Nov 2025 23:12:39 GMT
 ```
 
 ```zsh
-# not string type is a
+# aは文字列型ではないためメッセージあり
 curl -X POST -D - -d '{a:1}' http://localhost:1337/foo
 HTTP/1.1 400 Expected property name or '}' in JSON at position 1 (line 1 column 2)
 Connection: close
