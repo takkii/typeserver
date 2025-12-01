@@ -1,4 +1,4 @@
-### RESTful JSON Server
+### RESTful Server
 
 ```json
 // ./types/json/types.json
@@ -11,30 +11,30 @@
 # PowerShellで実行
 cd typeserver
 
-# typesプロジェクトをライブラリに追加
+# 検証のため、テスト
 npm link
 
 # テスト完了後
 npm unlink types
 
-# ① typeserver/server.jsを実行
+# ① VPSサーバー用
 node .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 listening on 1337
 
-# ② Powershellを起動後、typesを実行
+# ② ローカルホスト用
 npm install -g types-server
 types 1337
 
-※ ①と②どちらかを実行しサーバーを起動する。
+※ ①と②を環境別で実行しサーバーを起動する。
 
 # forever to run scripts continuously for Server.
 # Assuming a VPS server.
 npm install -g forever
 
-# Start.
+# Start, forever command in VPS server.
 forever start .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 
-# Stop.
+# Stop, forever command in VPS server.
 forever stop .\server.js
 ```
 
