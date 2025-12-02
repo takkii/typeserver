@@ -3,12 +3,12 @@
 ```markdown
 # コメントは、日本語で書きます
 
-# コマンドプロンプトで実行
+# コマンドプロンプトで実行します
 cd typeserver
 
 mkdir json && touch ./json/types.json && cd json && echo {"password": "d78b4b6e-06e7-4d4b-b354-1f1c27bb3281"} > types.json && cd ..
 
-# PowerShellを起動
+# PowerShellを起動します
 cd typeserver
 
 # テスト
@@ -25,7 +25,7 @@ listening on 1337
 npm install -g types-server
 types 1337
 
-※ ①と②を環境別で実行しサーバーを起動する。
+※ ①と②を環境別で実行しサーバーを起動します。
 
 # foreverは、スクリプトを永続的に実行します
 npm install -g forever
@@ -136,7 +136,7 @@ DELETE /groups undefined from ::1
 ```
 
 ```zsh
-# コマンドプロンプトで実行
+# コマンドプロンプトで実行します
 
 # ./json
 curl -X POST -H "Content-Type: application/json" -d @groups.json localhost:1337/groups
@@ -183,7 +183,7 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
-> _履歴: 2025/12/01 🔄_
+> _履歴: 2025/12/03 🔄_
 >
 > 「説明文の詳細」
 >
