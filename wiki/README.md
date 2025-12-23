@@ -31,10 +31,10 @@ types 1337
 npm install -g forever
 
 # 開始, foreverをVPSサーバーで実行を想定します
-forever start .\server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
+forever start server.js 1337 d78b4b6e-06e7-4d4b-b354-1f1c27bb3281
 
 # 停止, foreverをVPSサーバーで実行を想定します
-forever stop .\server.js
+forever stop server.js
 ```
 
 ```zsh
@@ -183,7 +183,7 @@ cd ~/GitHub/types && mkdir json && cd
 copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
 ```
 
-> _履歴: 2025/12/03 🔄_
+> _履歴: 2025/12/24 🔄_
 >
 > 「説明文の詳細」
 >
