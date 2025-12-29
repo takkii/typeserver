@@ -167,29 +167,9 @@ POST /groups {
 GET /groups from ::1
 ```
 
-> ctrl + c / Stop
+> 停止、ctrl + c
 
-```zsh
-cd GitHub
-
-git clone git@github.com:takkii/json.git
-
-git clone git@github.com:takkii/types.git
-
-cd ..
-
-cd ~/GitHub/types && mkdir json && cd
-
-copy ~/GitHub/json/types/types.json ~/GitHub/types/json/types.json
-```
-
-> _履歴: 2025/12/24 🔄_
->
-> 「説明文の詳細」
->
-> - GitHub takkii/jsonとmetaphorプロジェクトは非公開にしています。
->
-> - typesプロジェクトの使用例として参考にしてください。
+> _更新履歴: 2025/12/29 🔄_
 >
 
 #### 参考文献: 「サーバサイドJavaScript Node.js入門」 
